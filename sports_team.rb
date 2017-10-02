@@ -14,5 +14,9 @@ class SportTeam
     return @players
   end
 
+  def coach
+    return @coach
+  end
+
 
 end
