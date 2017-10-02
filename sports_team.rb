@@ -26,4 +26,10 @@ class SportTeam
     self.players.push(name)
   end
 
+  def if_player_in_array(name)
+    if self.players.include?(name)
+      return name
+    end
+  end
+
 end

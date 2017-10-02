@@ -33,6 +33,10 @@ class TestSportTeam < MiniTest::Test
     assert_equal(['Michel', 'Jim', 'Sophia', 'Andre'], result)
   end
 
+  def test_if_player_in_array
+    assert_equal('Jim', @sport_team.if_player_in_array('Jim'))
+  end
+
 
 
 
