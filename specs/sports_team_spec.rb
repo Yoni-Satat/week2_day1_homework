@@ -37,6 +37,11 @@ class TestSportTeam < MiniTest::Test
     assert_equal('Jim', @sport_team.if_player_in_array('Jim'))
   end
 
+  def test_team_points
+
+    assert_equal(1, @sport_team.team_points("win"))
+  end
+
 
 
 

@@ -33,4 +33,12 @@ class SportTeam
     end
   end
 
+  def team_points(won_lost)
+    if(won_lost == "win")
+      @points += 1
+    else
+      @points = @points
+  end
+end
+
 end
