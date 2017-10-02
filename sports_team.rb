@@ -22,6 +22,8 @@ class SportTeam
   # def set_coach(coach)
   #   @coach = coach
   # end
-
+  def add_player(name)
+    self.players.push(name)
+  end
 
 end
