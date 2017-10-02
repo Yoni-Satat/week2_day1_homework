@@ -25,6 +25,10 @@ class Student
     return result
   end
 
+  def favourite_language(language)
+    return "I love #{language}"
+  end
+
 
 
 
