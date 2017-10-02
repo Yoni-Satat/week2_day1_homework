@@ -6,12 +6,16 @@ class TestSportTeam < MiniTest::Test
   @sport_team
 
   def setup
-    players = ['Michel', 'Jim', 'Sophia']
-    @sport_team = SportTeam.new('Liverpool', players, 'Yoni' )
+    @players = ['Michel', 'Jim', 'Sophia']
+    @sport_team = SportTeam.new('Liverpool', @players, 'Yoni' )
   end
 
   def test_team_name
     assert_equal('Liverpool', @sport_team.team_name)
+  end
+
+  def test_players
+    assert_equal(@players, @sport_team.players)
   end
 
 
